@@ -1,0 +1,124 @@
+user:
+    name: lg
+    uid: 1001
+    group: lg
+    shell: /usr/bin/bash
+    email:  lg@lgaggini.net
+
+hostname: thule
+
+dotfiles:
+    url: https://github.com/lgaggini/dotfiles.git
+    destination: code/lgaggini/dotfiles
+
+vundle:
+    url: https://github.com/VundleVim/Vundle.vim.git
+    destination: .vim/bundle/vundle
+
+home_skel:
+    - bak
+    - bin
+    - cal
+    - code/lgaggini
+    - doc/lgaggini
+    - down
+    - logs
+    - mail
+    - note
+    - read
+    - tmp
+    - vms
+
+core_utils:
+    - binutils
+    - bash
+    - bash-completion
+    - base-devel
+    - less
+    - bc
+    - colordiff
+    - fzf
+    - ack
+    - jq
+    - rsync
+    - parallel
+    - pwgen
+    - tmux
+    - git
+    - tig
+    - yaourt
+    - sudo
+    - ranger
+    - vim
+    - pkgfile
+    - linux-lts
+    - ttf-dejavu
+    - ttf-hack
+core_debugutils:
+    - strace
+    - lsof
+    - htop
+    - glances
+    - sysstat
+core_netutils:
+    - net-tools
+    - wicd
+    - curl
+    - wget
+    - surfraw
+    - w3m
+    - nmap
+    - gnu-netcat
+    - whois
+    - mtr
+    - sslscan
+    - httpie
+    - tcpdump
+    - nethogs
+core_goodies:
+    - archey3
+    - fortune-mod
+    - cowsay
+core_aur:
+    - byobu
+
+gui_core:
+    - xorg-server
+    - xorg-xinit
+    - xorg-xmodmap
+    - xorg-xev
+    - xorg-xbacklight
+    - xorg-xrandr
+gui_video_drivers:
+    - xf86-video-vesa
+gui_ui:
+    - awesome-wm
+gui_utility:
+    - volumeicon
+    - qt5ct
+    - lxappearance
+    - xfce4-power-manager
+    - xfce4-screenshooter
+    - parcellite
+    - i3lock
+    - slock
+    - redshift
+    - arandr
+    - unclutter
+    - xautolock
+    - wicd
+gui_themes:
+    - elementary-icon-theme
+gui_aur:
+    - vertex-themes
+
+tools:
+    - urxvt
+    - pcmanfm
+    - file-roller
+    - zathura
+    - lxtask
+    - gvim
+    - ctags
+    - chromium
+    - pepper-flash

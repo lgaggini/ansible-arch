@@ -1,0 +1,19 @@
+---
+- name: Copy pacman configuration file
+  copy: src=pacman.conf dest=/etc/pacman.conf
+
+- name: Refresh pacman mirrors
+  pacman: update_cache=yes
+
+- name: Install reflector
+  pacman: name=reflector state=present
+
+- name: Sort mirror by reflector
+  shell: reflector --latest 50 --age 24 --sort rate --save /etc/pacman.d/mirrorlist
+
+- name: Set the hostname
+  hostname: name={{ hostname }}
+  when: hostname is defined
+
+- include: user.yml
+- include: packages.yml

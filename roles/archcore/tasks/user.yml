@@ -1,0 +1,15 @@
+---
+- name: Create user group
+  group: name={{ user.group }} state=present
+  tags:
+    - user
+
+- name: Create user and assign to groups
+  user: name={{ user.name }} group={{ user.group }} shell={{ user.shell }} update_password=on_create uid={{ user.uid }} groups=wheel,users,audio,sys,storage append=yes
+  tags:
+    - user
+
+- name: Copy sudo configuration
+  copy: src=sudoers dest=/etc/sudoers mode=440 validate='visudo -cf %s'
+  tags:
+    - user

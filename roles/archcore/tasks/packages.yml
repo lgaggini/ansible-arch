@@ -1,0 +1,49 @@
+---
+- name: Install core utils packages
+  pacman: name={{ item }} state=present
+  with_items: "{{ core_utils }}"
+  tags:
+    - packages
+    - core_utils
+
+- name: Install core debug utils packages
+  pacman: name={{ item }} state=present
+  with_items: "{{ core_debugutils }}"
+  tags:
+    - packages
+    - core_debugutils
+
+- name: Install core net utils packages
+  pacman: name={{ item }} state=present
+  with_items: "{{ core_netutils }}"
+  tags:
+    - packages
+    - core_netutils
+
+- name: Install core goodies packages
+  pacman: name={{ item }} state=present
+  with_items: "{{ core_goodies }}"
+  tags:
+    - packages
+    - core_goodies
+
+- name: Install core aur packages
+  shell: yaourt --noconfirm -S {{ item }}
+  with_items: "{{ core_aur}}"
+  become: yes
+  become_user: "{{ user.name }}"
+  tags:
+    - packages
+    - core_aur
+    - aur
+
+- name: Create pacman hook directory
+  file: path=/etc/pacman.d/hooks
+        state=directory
+  tags:
+    - packages
+
+- name: Push pacman mirror list update hook
+  copy: src=mirrorupgrade.hook dest=/etc/pacman.d/hooks/mirrorupgrade.hook
+  tags:
+    - packages
