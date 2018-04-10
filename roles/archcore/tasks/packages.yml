@@ -30,6 +30,7 @@
 - name: Install core aur packages
   shell: yaourt --noconfirm -S {{ item }}
   with_items: "{{ core_aur}}"
+  when: core_aur is defined
   become: yes
   become_user: "{{ user.name }}"
   tags:
