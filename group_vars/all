@@ -51,6 +51,7 @@ core_utils:
     - ranger
     - vim
     - pkgfile
+    - mlocate
     - linux-lts
     - ttf-dejavu
     - ttf-hack
