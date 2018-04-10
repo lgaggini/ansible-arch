@@ -2,8 +2,8 @@ user:
     name: lg
     uid: 1001
     group: lg
-    shell: /usr/bin/bash
-    email:  lg@lgaggini.net
+    shell: /bin/bash
+    email: lg@lgaggini.net
 
 hostname: thule
 
