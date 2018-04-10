@@ -7,6 +7,3 @@
     # - { role: dotfiles, tags: ['dotfiles', 'cli', 'gui'] }
     # - { role: gui, tags: ['gui'] }
     # - { role: tools, tags: ['tools', 'gui'] }
-  vars_prompt:
-    - name: user_password
-      prompt: "Enter desired user password"
