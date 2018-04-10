@@ -4,6 +4,6 @@
   roles:
     - { role: archcore, tags: ['core', 'cli', 'gui'] }
     - { role: home, tags: ['home', 'cli', 'gui'] }
-    # - { role: dotfiles, tags: ['dotfiles', 'cli', 'gui'] }
+    - { role: dotfiles, tags: ['dotfiles', 'cli', 'gui'] }
     # - { role: gui, tags: ['gui'] }
     # - { role: tools, tags: ['tools', 'gui'] }

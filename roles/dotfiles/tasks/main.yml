@@ -1,0 +1,41 @@
+---
+- name: Clone user dotfiles
+  git: repo={{ dotfiles.url }} dest=/home/{{ user.name }}/{{ dotfiles.destination }} accept_hostkey=yes update=no
+  when: dotfiles is defined
+  become: yes
+  become_user: "{{ user.name }}"
+
+- name: Install user dotfiles
+  synchronize: src=/home/{{ user.name}}/{{ dotfiles.destination}}/ dest=/home/{{ user.name }}/ archive=yes rsync_opts=--exclude=.git,--exclude=_config.yml,--exclude=LICENSE,--exclude=README.md
+  when: dotfiles is defined
+  delegate_to: "{{ inventory_hostname }}"
+  become: yes
+  become_user: "{{ user.name }}"
+
+- name: Download and install in bin the z.sh script
+  get_url: url=https://raw.githubusercontent.com/rupa/z/master/z.sh dest=/home/{{ user.name }}/bin/z.sh mode=0755
+  become: yes
+  become_user: "{{ user.name }}"
+
+- name: Clone vundle for vim
+  git: repo={{ vundle.url }} dest={{ vundle.destination }} version=master
+  when: vundle is defined
+  become: yes
+  become_user: "{{ user.name }}"
+  tags:
+    - vim
+
+- name: Install Vim plugins
+  command: "vim +PluginInstall +qall"
+  when: vundle is defined
+  become: yes
+  become_user: "{{ user.name }}"
+  tags:
+    - vim
+
+- name: create backup directory for vim
+  file: path="/home/{{ user.name }}/.vim/backup" state=directory
+  become: yes
+  become_user: "{{ user.name }}"
+  tags:
+    - vim
