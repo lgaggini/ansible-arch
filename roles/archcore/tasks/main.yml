@@ -16,5 +16,6 @@
   when: hostname is defined
 
 - include: user.yml
+- include: locale.yml
 - include: timezone.yml
 - include: packages.yml

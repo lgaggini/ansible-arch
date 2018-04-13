@@ -6,6 +6,9 @@ user:
     email: lg@lgaggini.net
 
 timezone: Europe/Rome
+locale: it_IT.UTF-8
+keymap: it
+
 hostname: thule
 
 dotfiles:
