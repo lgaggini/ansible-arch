@@ -5,6 +5,7 @@ user:
     shell: /bin/bash
     email: lg@lgaggini.net
 
+timezone: Europe/Rome
 hostname: thule
 
 dotfiles:

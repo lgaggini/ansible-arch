@@ -1,0 +1,5 @@
+- name: set timezone to "{{ timezone }}"
+  timezone: name="{{ timezone }}"
+  tags:
+    - core
+    - timezone
