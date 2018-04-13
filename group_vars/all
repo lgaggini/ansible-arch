@@ -61,6 +61,7 @@ core_debugutils:
     - htop
     - glances
     - sysstat
+    - ncdu
 core_netutils:
     - net-tools
     - wicd
@@ -125,6 +126,5 @@ tools:
     - zathura
     - lxtask
     - gvim
-    - ctags
     - chromium
     - pepper-flash
