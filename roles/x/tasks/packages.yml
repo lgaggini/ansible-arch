@@ -1,0 +1,52 @@
+---
+- name: Install gui core packages
+  pacman: name={{ item }} state=present
+  with_items: "{{ gui_core }}"
+  tags:
+    - packages
+    - gui
+    - gui_core
+
+- name: Install gui video drivers
+  pacman: name={{ item }} state=present
+  with_items: "{{ gui_video_drivers }}"
+  tags:
+    - packages
+    - gui
+    - gui_video_drivers
+
+- name: Install gui de/wm packages
+  pacman: name={{ item }} state=present
+  with_items: "{{ gui_ui }}"
+  tags:
+    - packages
+    - gui
+    - gui_ui
+
+- name: Install gui utility packages
+  pacman: name={{ item }} state=present
+  with_items: "{{ gui_utility }}"
+  tags:
+    - packages
+    - gui
+    - gui_utility
+
+- name: Install gui themes packages
+  pacman: name={{ item }} state=present
+  with_items: "{{ gui_themes }}"
+  tags:
+    - packages
+    - gui 
+    - gui_themes
+
+- name: Install gui aur packages
+  shell: yaourt --noconfirm -S {{ item }}
+  with_items: "{{ gui_aur}}"
+  become: yes
+  become_user: "{{ user.name }}"
+  when: gui_aur is defined
+  tags:
+    - packages
+    - gui
+    - gui_aur
+    - aur
