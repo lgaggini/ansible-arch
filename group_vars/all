@@ -93,7 +93,10 @@ gui_core:
 gui_video_drivers:
     - xf86-video-vesa
 gui_ui:
-    - awesome-wm
+    - awesome
+    - vicious
+    - rxvt-unicode
+    - rxvt-unicode-terminfo
 gui_utility:
     - volumeicon
     - qt5ct
@@ -112,9 +115,11 @@ gui_themes:
     - elementary-icon-theme
 gui_aur:
     - vertex-themes
+    - eminent-git
+    - lain-git
+    - awesome-freedesktop-git
 
 tools:
-    - urxvt
     - pcmanfm
     - file-roller
     - zathura
