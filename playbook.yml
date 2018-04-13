@@ -6,4 +6,4 @@
     - { role: home, tags: ['home', 'cli', 'gui'] }
     - { role: dotfiles, tags: ['dotfiles', 'cli', 'gui'] }
     - { role: x, tags: ['x', 'gui'] }
-    # - { role: tools, tags: ['tools', 'gui'] }
+    - { role: tools, tags: ['tools', 'gui'] }

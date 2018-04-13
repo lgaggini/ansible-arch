@@ -127,4 +127,3 @@ tools:
     - lxtask
     - gvim
     - chromium
-    - pepper-flash
