@@ -95,6 +95,7 @@ gui_core:
     - xorg-xev
     - xorg-xbacklight
     - xorg-xrandr
+    - xcape
 gui_video_drivers:
     - xf86-video-vesa
 gui_ui:
