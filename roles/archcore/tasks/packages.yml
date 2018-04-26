@@ -6,6 +6,12 @@
     - packages
     - core_utils
 
+- name: Install tmux splitted pages script
+  copy: src=tmux_splitted_pager.sh dest=/home/{{ user.name }}/bin/tmux_splitted_pager.sh
+  tags:
+    - packages
+    - core_utils
+
 - name: Install core debug utils packages
   pacman: name={{ item }} state=present
   with_items: "{{ core_debugutils }}"
