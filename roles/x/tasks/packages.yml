@@ -23,9 +23,23 @@
     - gui
     - gui_ui
 
+- name: Install naughty send script for notification
+  copy: src=naughty-send.sh dest=/home/{{ user.name }}/bin/naughty-send.sh
+  tags:
+    - packages
+    - gui
+    - gui_utility
+
 - name: Install gui utility packages
   pacman: name={{ item }} state=present
   with_items: "{{ gui_utility }}"
+  tags:
+    - packages
+    - gui
+    - gui_utility
+
+- name: Install slock wrapper
+  copy: src=slock dest=/usr/bin/slock
   tags:
     - packages
     - gui
