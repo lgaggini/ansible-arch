@@ -131,3 +131,12 @@ tools:
     - lxtask
     - gvim
     - chromium
+
+mail:
+    - neomutt
+    - offlineimap
+    - msmtp
+    - notmuch-runtime
+mail_aur
+    - urlscan
+    - lbdb

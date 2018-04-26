@@ -1,0 +1,24 @@
+---
+- name: Install core mail packages
+  pacman: name={{ item }} state=present
+  with_items: "{{ mail }}"
+  tags:
+    - packages
+    - cli
+
+- name: Install core aur packages
+  shell: yaourt --noconfirm -S {{ item }}
+  with_items: "{{ mail_aur}}"
+  when: core_aur is defined
+  become: yes
+  become_user: "{{ user.name }}"
+  tags:
+    - packages
+    - aur
+    - cli
+
+- name: Install mutt_bgrun script
+  copy: src=mutt_bgrun dest=/home/{{ user.name }}/bin/mutt_bgrun
+  tags:
+    - packages
+    - cli
