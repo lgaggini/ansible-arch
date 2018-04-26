@@ -111,7 +111,6 @@ gui_utility:
     - xfce4-screenshooter
     - parcellite
     - i3lock
-    - slock
     - redshift
     - arandr
     - unclutter
