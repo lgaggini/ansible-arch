@@ -15,9 +15,10 @@ The follow roles are done:
 * dotfiles: clones a dotfiles repo by git and install them in the home
 * x: installs xorg, video driver, window manager and basic gui utilities
 * tools: installs some core gui tools (browser, editor, file manager)
+* mail cli: neomutt, msmtp, offlineimap, notmuch, lbdb, urlscan
 
 To come:
-* mail
+* mail gui
 * pim
 * audio
 * media
