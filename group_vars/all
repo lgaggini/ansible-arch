@@ -137,6 +137,7 @@ mail:
     - offlineimap
     - msmtp
     - notmuch-runtime
+    - gpgme
 mail_aur
     - urlscan
     - lbdb
