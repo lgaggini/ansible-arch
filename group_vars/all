@@ -116,6 +116,8 @@ gui_utility:
     - unclutter
     - xautolock
     - wicd
+    - gnome-keyring
+    - seahorse
 gui_themes:
     - elementary-icon-theme
 gui_aur:
