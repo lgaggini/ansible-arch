@@ -1,0 +1,13 @@
+defaults
+logfile ~/logs/msmtp.log
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+auth {{ mail_account.smtp_auth }}
+tls {{ mail_account.smtp_tls }}
+port {{ mail_account.smtp_port }}
+
+account {{ mail_account.name }}
+host {{ mail_account.smtp }}
+user {{ mail_account.username }}
+passwordeval "pass mail/{{ mail_account.name }}"
+
+account default: {{ mail_account.name }}

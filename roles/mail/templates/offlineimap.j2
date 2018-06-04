@@ -1,0 +1,26 @@
+# Sample minimal config file.  Copy this to ~/.offlineimaprc and edit to
+# get started fast.
+
+[general]
+accounts = {{ mail_account.name}}
+pythonfile = {{ mail_account.imap_file }}
+
+[Account {{ mail_account.name }}]
+localrepository = Local
+remoterepository = Remote
+autorefresh = 5
+quick = 10
+postsynchook = /usr/bin/notmuch new
+
+[Repository Local]
+type = Maildir
+localfolders = ~/mail/
+
+[Repository Remote]
+type = IMAP
+remotehost = {{ mail_account.imap }}
+ssl = {{ mail_account.imap_ssl }}
+cert_fingerprint = {{ mail_account.cert_fingerprint }}
+remoteport = {{ mail_account.imap_port }}
+remoteusereval = get_user({{ mail_account.name }})
+remotepasseval = get_pass({{ mail_account.name }})
