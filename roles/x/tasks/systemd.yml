@@ -1,0 +1,7 @@
+---
+- name: Enable redshift-gtk unit
+  systemd: daemon_reload=yes user=yes name=redshift-gtk enabled=yes
+  with_items: "{{ gui_core }}"
+  tags:
+    - gui
+    - gui_utility
