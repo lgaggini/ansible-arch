@@ -1,0 +1,5 @@
+---
+- name: Enable offlineimap service
+  systemd: daemon_reload=yes user=yes name=offlineimap enabled=yes
+  tags:
+    - cli
