@@ -160,3 +160,6 @@ pim
    - pass
 pim_aur
    - todoman
+pim_account:
+   name: account
+   url; caldav_url
