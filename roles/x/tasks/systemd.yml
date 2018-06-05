@@ -1,6 +1,10 @@
 ---
 - name: Enable redshift-gtk unit
   systemd: daemon_reload=yes user=yes name=redshift-gtk enabled=yes
+  become: yes                                                                                                                                                                                                    
+  become_user: "{{ user.name }}" 
+  environment:
+    XDG_RUNTIME_DIR: /run/user/{{ user.uid }}
   tags:
     - gui
     - gui_utility
