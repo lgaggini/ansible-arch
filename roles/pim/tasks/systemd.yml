@@ -1,0 +1,5 @@
+---
+- name: Enable vdirsyncer service timer
+  systemd: daemon_reload=yes user=yes name=vdirsyncer.timer enabled=yes
+  tags:
+    - cli

@@ -1,0 +1,10 @@
+---
+
+- name: Vdirsyncer configuration folder
+  file: path=/home/{{ user.name }}/.vdirsyncer owner={{ user.name }} group={{ user.name }} mode=0700
+  tags:
+
+- name: Vdirsyncer configuration 
+  template: src=templates/vdirsyncer.j2 dest=/home/{{ user.name }}/.vdirsyncer/config owner={{ user.name }} group={{ user.name }} mode=0600
+  tags:
+    - pim

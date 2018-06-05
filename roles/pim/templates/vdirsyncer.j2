@@ -1,0 +1,18 @@
+[general]
+status_path = "~/.vdirsyncer/status/"
+
+[pair my_calendar]
+a = "local"
+b = "remote"
+collections = ["from a", "from b"]
+
+[storage remote]
+type = "caldav"
+url = "{{ cal_url }}
+username.fetch = ["command", "~/bin/account_credentials.py", "get_user", "{{ cal_account }}"] 
+password.fetch = ["command", "~/bin/account_credentials.py", "get_pass", "{{ cal_account }}"] 
+
+[storage local]
+type = "filesystem"
+path = "~/cal"
+fileext = ".ics"
