@@ -16,10 +16,11 @@ The follow roles are done:
 * x: installs xorg, video driver, window manager and basic gui utilities
 * tools: installs some core gui tools (browser, editor, file manager)
 * mail cli: neomutt, msmtp, offlineimap, notmuch, lbdb, urlscan
+* pim: pass, vdirsyncer, khal, todoman
 
 To come:
 * mail gui
-* pim
+* pim gui
 * audio
 * media
 * communication

@@ -154,3 +154,9 @@ mail_account:
     smtp_tls:  on
     smtp_port: 587
 
+pim
+   - vdirsyncer
+   - khal
+   - pass
+pim_aur
+   - todoman
