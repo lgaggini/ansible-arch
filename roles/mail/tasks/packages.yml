@@ -10,6 +10,8 @@
   shell: yaourt --noconfirm -S {{ item }}
   with_items: "{{ mail_aur}}"
   when: core_aur is defined
+  environment:
+    PATH: "/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
   become: yes
   become_user: "{{ user.name }}"
   tags:
