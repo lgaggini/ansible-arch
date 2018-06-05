@@ -7,7 +7,7 @@
     - pim_account
 
 - name: Vdirsyncer configuration 
-  template: src=templates/vdirsyncer.j2 dest=/home/{{ user.name }}/.vdirsyncer/config owner={{ user.name }} group={{ user.name }} mode=0600
+  template: src=vdirsyncer.j2 dest=/home/{{ user.name }}/.vdirsyncer/config owner={{ user.name }} group={{ user.name }} mode=0600
   tags:
     - cli
     - pim_account
