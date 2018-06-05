@@ -145,13 +145,14 @@ mail_aur:
     - lbdb
 mail_account:
     name: account
-    imap: imap.account
+    imap_host: imap.account
     imap_ssl: yes
     imap_cert_fingerprint: ssl_fingerprint
     imap_port: 993
     smtp_host: smtp.account
-    smtp_auth: on
-    smtp_tls:  on
+    smtp_auth: "on"
+    smtp_username: lg
+    smtp_tls: "on"
     smtp_port: 587
 
 pim:

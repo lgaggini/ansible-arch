@@ -6,8 +6,8 @@ tls {{ mail_account.smtp_tls }}
 port {{ mail_account.smtp_port }}
 
 account {{ mail_account.name }}
-host {{ mail_account.smtp }}
-user {{ mail_account.username }}
+host {{ mail_account.smtp_host }}
+user {{ mail_account.smtp_username }}
 passwordeval "pass mail/{{ mail_account.name }}"
 
 account default: {{ mail_account.name }}
