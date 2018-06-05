@@ -140,7 +140,7 @@ mail:
     - msmtp
     - notmuch-runtime
     - gpgme
-mail_aur
+mail_aur:
     - urlscan
     - lbdb
 mail_account:
@@ -154,12 +154,12 @@ mail_account:
     smtp_tls:  on
     smtp_port: 587
 
-pim
+pim:
    - vdirsyncer
    - khal
    - pass
-pim_aur
+pim_aur:
    - todoman
 pim_account:
    name: account
-   url; caldav_url
+   url: caldav_url
