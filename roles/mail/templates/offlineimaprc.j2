@@ -3,7 +3,7 @@
 
 [general]
 accounts = {{ mail_account.name}}
-pythonfile = {{ mail_account.imap_file }}
+pythonfile = ~/bin/account_credentials.py 
 
 [Account {{ mail_account.name }}]
 localrepository = Local
@@ -18,9 +18,9 @@ localfolders = ~/mail/
 
 [Repository Remote]
 type = IMAP
-remotehost = {{ mail_account.imap }}
+remotehost = {{ mail_account.imap_host }}
 ssl = {{ mail_account.imap_ssl }}
-cert_fingerprint = {{ mail_account.cert_fingerprint }}
+cert_fingerprint = {{ mail_account.imap_cert_fingerprint }}
 remoteport = {{ mail_account.imap_port }}
 remoteusereval = get_user({{ mail_account.name }})
 remotepasseval = get_pass({{ mail_account.name }})
