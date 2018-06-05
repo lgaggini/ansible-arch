@@ -15,12 +15,10 @@ The follow roles are done:
 * dotfiles: clones a dotfiles repo by git and install them in the home
 * x: installs xorg, video driver, window manager and basic gui utilities
 * tools: installs some core gui tools (browser, editor, file manager)
-* mail cli: neomutt, msmtp, offlineimap, notmuch, lbdb, urlscan
-* pim: pass, vdirsyncer, khal, todoman
+* mail: installs neomutt, msmtp, offlineimap, notmuch, lbdb, urlscan
+* pim: installs pass, vdirsyncer, khal, todoman
 
 To come:
-* mail gui
-* pim gui
 * audio
 * media
 * communication
@@ -44,6 +42,7 @@ The configuration of the playbook is done by edit the `group_vars/all` file, you
 * some settings for the archlinux installation customization
 * dotfiles git repo location
 * packages list to be installed for the various roles
+* mail_account (imap and smtp) and cal account
 
 ## Usage
 ### Vagrant playground
@@ -62,3 +61,5 @@ Main available tags are:
 * gui
 * dotfiles
 * tools
+* mail
+* pim
