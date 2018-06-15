@@ -15,6 +15,9 @@
   hostname: name={{ hostname }}
   when: hostname is defined
 
+- name: Use all cores when compressing packages
+  lineinfile: dest=/etc/makepkg.conf regexp="^COMPRESSXZ" line="COMPRESSXZ=(xz -c -z - --threads=0)"
+
 - include: user.yml
 - include: locale.yml
 - include: timezone.yml
