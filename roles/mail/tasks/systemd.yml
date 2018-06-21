@@ -9,3 +9,14 @@
     - cli
     - mail
     - systemd
+
+- name: Enable trash autoclean timer
+  systemd: daemon_reload=yes user=yes name=trash-maildir-clean.timer enabled=yes
+  become: yes                                                                                                                                                                                                    
+  become_user: "{{ user.name }}" 
+  environment:
+    XDG_RUNTIME_DIR: /run/user/{{ user.uid }}
+  tags:
+    - cli
+    - mail
+    - systemd
