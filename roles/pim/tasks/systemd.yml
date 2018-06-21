@@ -7,3 +7,5 @@
     XDG_RUNTIME_DIR: /run/user/{{ user.uid }}
   tags:
     - cli
+    - pim
+    - systemd
