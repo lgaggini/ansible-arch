@@ -1,12 +1,12 @@
 ---
-- name: Install core pim packages
+- name: Install pim packages
   pacman: name={{ item }} state=present
   with_items: "{{ pim }}"
   tags:
     - packages
     - cli
 
-- name: Install core aur packages
+- name: Install pim aur packages
   shell: yaourt --noconfirm -S {{ item }}
   with_items: "{{ pim_aur }}"
   when: core_aur is defined
