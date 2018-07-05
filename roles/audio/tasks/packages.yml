@@ -1,0 +1,27 @@
+---
+- name: Install audio core packages
+  pacman: name={{ item }} state=present
+  with_items: "{{ audio_core }}"
+  tags:
+    - packages
+    - cli
+    - audio_core
+
+- name: Install audio players packages
+  pacman: name={{ item }} state=present
+  with_items: "{{ audio_players }}"
+  tags:
+    - packages
+    - cli
+    - audio_players
+
+- name: Install audio aur packages
+  shell: yaourt --noconfirm -S {{ item }}
+  with_items: "{{ audio_aur }}"
+  when: core_aur is defined
+  become: yes
+  become_user: "{{ user.name }}"
+  tags:
+    - packages
+    - aur
+    - cli

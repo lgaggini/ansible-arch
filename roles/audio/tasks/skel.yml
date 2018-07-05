@@ -1,0 +1,9 @@
+---
+- name: Create audio directory skel
+  file: path=/home/{{ user.name }}/{{ item }} state=directory mode=0755 recurse=yes
+  become: yes
+  become_user: "{{ user.name }}"
+  with_items: "{{ audio_skel }}"
+  tags:
+    - cli
+    - audio_skel

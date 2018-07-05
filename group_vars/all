@@ -164,3 +164,14 @@ pim_aur:
 pim_account:
    name: account
    url: caldav_url
+
+audio_core:
+  - alsa-utils
+audio_players:
+  - mpd
+  - mpc
+  - ncmpc
+audio_aur:
+  - soundcloud-dl-git
+audio_skel:
+  - media/music/trance/livesets
