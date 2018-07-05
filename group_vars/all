@@ -115,7 +115,7 @@ gui_utility:
     - arandr
     - unclutter
     - xautolock
-    - wicd
+    - wicd-gtk
     - gnome-keyring
     - seahorse
 gui_themes:
@@ -127,7 +127,6 @@ gui_aur:
     - awesome-freedesktop-git
 
 tools:
-    - pcmanfm
     - file-roller
     - zathura
     - lxtask
