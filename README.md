@@ -11,15 +11,16 @@ The follow roles are done:
     * timezone, locale and keymapping configuration
     * pacman configuration, mirror refresh, reflector install and mirror sort
     * basic packages install
-* home: populates the home with a folders skel
+* home: populates home with a directories skel
 * dotfiles: clones a dotfiles repo by git and install them in the home
 * x: installs xorg, video driver, window manager and basic gui utilities
-* tools: installs some core gui tools (browser, editor, file manager)
+* tools: installs some core gui tools (browser, editor)
 * mail: installs neomutt, msmtp, offlineimap, notmuch, lbdb, urlscan
 * pim: installs pass, vdirsyncer, khal, todoman
+* audio: install alsa-utils, mpd, mpc, ncmpc, soundcloud-dl and create media/audio subdirectories
 
 To come:
-* audio
+* backup
 * media
 * communication
 * sys
@@ -63,3 +64,4 @@ Main available tags are:
 * tools
 * mail
 * pim
+* audio
