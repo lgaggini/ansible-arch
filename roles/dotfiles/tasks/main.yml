@@ -18,7 +18,7 @@
   become_user: "{{ user.name }}"
 
 - name: Clone vundle for vim
-  git: repo={{ vundle.url }} dest={{ vundle.destination }} version=master
+  git: repo={{ plug.url }} dest=/home/{{ user.name }}/{{ plug.destination }} version=master
   when: vundle is defined
   become: yes
   become_user: "{{ user.name }}"
@@ -26,7 +26,7 @@
     - vim
 
 - name: Install Vim plugins
-  command: "vim +PluginInstall +qall"
+  command: "vim +PlugInstall +qall"
   when: vundle is defined
   become: yes
   become_user: "{{ user.name }}"

@@ -15,9 +15,9 @@ dotfiles:
     url: https://github.com/lgaggini/dotfiles.git
     destination: code/lgaggini/dotfiles
 
-vundle:
-    url: https://github.com/VundleVim/Vundle.vim.git
-    destination: .vim/bundle/vundle
+plug:
+    url: https://github.com/junegunn/vim-plug.git
+    destination: .vim/autoload/vim-plug.vim
 
 home_skel:
     - bak
