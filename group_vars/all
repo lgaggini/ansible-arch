@@ -131,6 +131,7 @@ tools:
     - zathura
     - lxtask
     - gvim
+    - python-neovim
     - chromium
 
 mail:
