@@ -51,6 +51,7 @@ core_utils:
     - git
     - tig
     - yaourt
+    - yay
     - sudo
     - ranger
     - vim

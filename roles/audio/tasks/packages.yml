@@ -16,7 +16,7 @@
     - audio_players
 
 - name: Install audio aur packages
-  shell: yaourt --noconfirm -S {{ item }}
+  shell: yay --noconfirm -S {{ item }}
   with_items: "{{ audio_aur }}"
   when: core_aur is defined
   become: yes

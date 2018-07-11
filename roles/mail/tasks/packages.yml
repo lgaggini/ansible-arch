@@ -7,7 +7,7 @@
     - cli
 
 - name: Install mail aur packages
-  shell: yaourt --noconfirm -S {{ item }}
+  shell: yay --noconfirm -S {{ item }}
   with_items: "{{ mail_aur}}"
   when: core_aur is defined
   environment:

@@ -34,7 +34,7 @@
     - core_goodies
 
 - name: Install core aur packages
-  shell: yaourt --noconfirm -S {{ item }}
+  shell: yay --noconfirm -S {{ item }}
   with_items: "{{ core_aur}}"
   when: core_aur is defined
   become: yes
