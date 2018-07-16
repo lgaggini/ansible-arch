@@ -126,6 +126,7 @@ gui_aur:
     - eminent-git
     - lain-git
     - awesome-freedesktop-git
+    - urxvt-resize-font-git
 
 tools:
     - file-roller

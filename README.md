@@ -17,7 +17,7 @@ The follow roles are done:
 * tools: installs some core gui tools (browser, editor)
 * mail: installs neomutt, msmtp, offlineimap, notmuch, lbdb, urlscan
 * pim: installs pass, vdirsyncer, khal, todoman
-* audio: install alsa-utils, mpd, mpc, ncmpc, soundcloud-dl and create media/audio subdirectories
+* audio: installs alsa-utils, mpd, mpc, ncmpc, soundcloud-dl and create media/audio subdirectories
 
 To come:
 * backup
