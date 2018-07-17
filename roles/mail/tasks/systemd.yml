@@ -1,9 +1,9 @@
 ---
 - name: Enable offlineimap service
   systemd: daemon_reload=yes user=yes name=offlineimap enabled=yes
-  become: yes                                                                                                                                                                                                    
+  become: yes
   become_method: machinectl
-  become_user: "{{ user.name }}" 
+  become_user: "{{ user.name }}"
   tags:
     - cli
     - mail
@@ -11,9 +11,9 @@
 
 - name: Enable trash autoclean timer
   systemd: daemon_reload=yes user=yes name=trash-maildir-clean.timer enabled=yes
-  become: yes                                                                                                                                                                                                    
+  become: yes
   become_method: machinectl
-  become_user: "{{ user.name }}" 
+  become_user: "{{ user.name }}"
   tags:
     - cli
     - mail

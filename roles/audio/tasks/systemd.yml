@@ -1,7 +1,7 @@
 ---
 - name: Enable mpd user service
   systemd: daemon_reload=yes user=yes name=mpd enabled=yes
-  become: yes                                                                                                                                                                                                    
+  become: yes
   become_method: machinectl
   become_user: "{{ user.name }}"
   tags:

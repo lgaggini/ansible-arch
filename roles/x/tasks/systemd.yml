@@ -1,9 +1,9 @@
 ---
 - name: Enable redshift-gtk unit
   systemd: daemon_reload=yes user=yes name=redshift-gtk enabled=yes
-  become: yes                                                                                                                                                                                                    
+  become: yes
   become_method: machinectl
-  become_user: "{{ user.name }}" 
+  become_user: "{{ user.name }}"
   tags:
     - gui
     - gui_utility

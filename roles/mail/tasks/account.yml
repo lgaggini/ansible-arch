@@ -1,11 +1,11 @@
 ---
-- name: Offlineimap configuration 
+- name: Offlineimap configuration
   template: src=offlineimaprc.j2 dest=/home/{{ user.name }}/.offlineimaprc owner={{ user.name }} group={{ user.name }} mode=0600
   tags:
     - cli
     - mail_account
 
-- name: Msmtprc configuration 
+- name: Msmtprc configuration
   template: src=msmtprc.j2 dest=/home/{{ user.name }}/.msmtprc owner={{ user.name }} group={{ user.name }} mode=0600
   tags:
     - cli

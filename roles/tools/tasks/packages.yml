@@ -1,4 +1,4 @@
----                                                                                                                                                                                                                
+---
 - name: Remove vim to install gvim
   pacman: name=vim state=absent
   tags:
