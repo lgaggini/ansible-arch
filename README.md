@@ -44,6 +44,7 @@ The configuration of the playbook is done by edit the `group_vars/all` file, you
 * dotfiles git repo location
 * packages list to be installed for the various roles
 * mail_account (imap and smtp) and cal account
+* backup remote server for backups rsync
 
 ### Custom systemd user unit
 I have all my user custom systemd units in my [dotfiles repo](https://github.com/lgaggini/dotfiles/tree/master/.config/systemd/user) and I get them in the dotfiles role and in
