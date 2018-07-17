@@ -82,6 +82,7 @@ core_netutils:
     - httpie
     - tcpdump
     - nethogs
+    - newsboat
 core_goodies:
     - archey3
     - fortune-mod
