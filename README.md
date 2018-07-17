@@ -18,9 +18,9 @@ The follow roles are done:
 * mail: installs neomutt, msmtp, offlineimap, notmuch, lbdb, urlscan
 * pim: installs pass, vdirsyncer, khal, todoman
 * audio: installs alsa-utils, mpd, mpc, ncmpc, soundcloud-dl and create media/audio subdirectories
+* backup: installs restic, enables scheduled backups and optionally enable backup rsync on a remote host by ssh
 
 To come:
-* backup
 * media
 * communication
 * sys
@@ -45,6 +45,10 @@ The configuration of the playbook is done by edit the `group_vars/all` file, you
 * packages list to be installed for the various roles
 * mail_account (imap and smtp) and cal account
 
+### Custom systemd user unit
+I have all my user custom systemd units in my [dotfiles repo](https://github.com/lgaggini/dotfiles/tree/master/.config/systemd/user) and I get them in the dotfiles role and in
+the other roles I enable them. They aren't included in the playbook.
+
 ## Usage
 ### Vagrant playground
 ```bash
@@ -65,3 +69,4 @@ Main available tags are:
 * mail
 * pim
 * audio
+* backup

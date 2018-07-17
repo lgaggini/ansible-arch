@@ -178,3 +178,12 @@ audio_aur:
   - soundcloud-dl-git
 audio_skel:
   - media/music/trance/livesets
+
+backup:
+  - restic
+  - rsync
+backup_remote:
+  enable: true
+  user: lgaggini
+  key: %h/.ssh/backup_key 
+  destination: backup.server/mybackup

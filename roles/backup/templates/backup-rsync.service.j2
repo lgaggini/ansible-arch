@@ -1,0 +1,9 @@
+[Unit]
+Description=Rsync backup to a remote host by ssh
+
+[Service]
+Type=oneshot
+Environment="USER={{ backup_remote.user }}"
+Environment="KEY={{ backup_remote.key }}"
+Environment="DESTINATION={{ backup_remote.destination }}"
+ExecStart=/usr/bin/rsync -az --delete -e '/usr/bin/ssh -i ${KEY}' %h/bak/ ${USER}@${DESTINATION}

@@ -10,3 +10,4 @@
     - { role: mail, tags: ['mail', 'cli', 'gui'] }
     - { role: pim, tags: ['pim', 'cli', 'gui'] }
     - { role: audio, tags: ['audio', 'cli', 'gui'] }
+    - { role: backup, tags: ['backup', 'cli', 'gui'] }

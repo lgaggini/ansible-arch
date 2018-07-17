@@ -1,0 +1,29 @@
+---
+- name: Enable backup service timer
+  systemd: daemon_reload=yes user=yes name=restic.timer enabled=yes
+  become: yes
+  become_method: machinectl
+  become_user: "{{ user.name }}"
+  tags:
+    - cli
+    - backup
+    - systemd
+
+- name: Backup rsync service remote settings
+  template: src=backup-rsync.service.j2 dest=/home/{{ user.name }}/.config/systemd/user/backup-rsync.service owner={{ user.name }} group={{ user.name }} mode=0644 force=yes
+  when: backup_remote.enable
+  tags:
+    - cli
+    - backup
+    - systemd
+
+- name: Enable backup rsync service timer
+  systemd: daemon_reload=yes user=yes name=backup-rsync.timer enabled=yes
+  become: yes
+  become_method: machinectl
+  become_user: "{{ user.name }}"
+  when: backup_remote.enable
+  tags:
+    - cli
+    - backup
+    - systemd
