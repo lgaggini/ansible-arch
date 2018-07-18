@@ -187,3 +187,14 @@ backup_remote:
   user: lgaggini
   key: "%h/.ssh/backup_key"
   destination: backup.server/mybackup
+
+ops_cli:
+  - ansible
+  - ansible-lint
+  - wireshark-cli
+  - libvirt
+ops_gui:
+  - wireshark-gtk
+  - virt-manager
+ops_aur:
+  - puppet-lint

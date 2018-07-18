@@ -1,0 +1,29 @@
+---
+- name: Install ops packages
+  pacman: name={{ item }} state=present
+  with_items: "{{ ops_cli }}"
+  tags:
+    - packages
+    - ops
+    - cli
+
+- name: Install ops packages
+  pacman: name={{ item }} state=present
+  with_items: "{{ ops_gui }}"
+  tags:
+    - packages
+    - ops
+    - gui
+
+- name: Install ops aur packages
+  shell: yay --noconfirm -S {{ item }}
+  with_items: "{{ mail_aur}}"
+  when: ops_aur is defined
+  environment:
+    PATH: "/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+  become: yes
+  become_user: "{{ user.name }}"
+  tags:
+    - packages
+    - aur
+    - cli

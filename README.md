@@ -19,12 +19,13 @@ The follow roles are done:
 * pim: installs pass, vdirsyncer, khal, todoman
 * audio: installs alsa-utils, mpd, mpc, ncmpc, soundcloud-dl and create media/audio subdirectories
 * backup: installs restic, enables scheduled backups and optionally enable backup rsync on a remote host by ssh
+* ops: installs ansible, ansible-lint, libvirt, wireshark, virt-mananger and puppet-lint
 
 To come:
+* virtinfra
+* dev
 * media
 * communication
-* sys
-* dev
 
 ## Install
 ### Clone
@@ -71,3 +72,4 @@ Main available tags are:
 * pim
 * audio
 * backup
+* ops
