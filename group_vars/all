@@ -185,5 +185,5 @@ backup:
 backup_remote:
   enable: true
   user: lgaggini
-  key: %h/.ssh/backup_key 
+  key: "%h/.ssh/backup_key"
   destination: backup.server/mybackup
