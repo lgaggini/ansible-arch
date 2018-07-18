@@ -206,3 +206,13 @@ virt_cli:
 virt_gui:
   - virtualbox
   - vagrant
+
+dev:
+  python:
+    - ipython2
+    - ipython
+    - python2-virtualenv
+    - python-virtualenv
+    - python-virtualenvwrapper
+    - pelican
+    - flake8

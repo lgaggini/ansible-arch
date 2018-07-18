@@ -21,9 +21,10 @@ The follow roles are done:
 * backup: installs restic, enables scheduled backups and optionally enable backup rsync on a remote host by ssh
 * ops: installs ansible, ansible-lint, libvirt, wireshark, virt-mananger and puppet-lint
 * virt: installs docker, qemu, virtualbox and vagrant
+* dev:
+    * python: installs ipython2/3, python2/3 virtualenv, python virtualenvwrapper, pelican and flake8
 
 To come:
-* dev
 * media
 * communication
 
@@ -74,3 +75,4 @@ Main available tags are:
 * backup
 * ops
 * virt
+* dev
