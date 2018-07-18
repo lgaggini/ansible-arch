@@ -136,6 +136,7 @@ tools:
     - gvim
     - python-neovim
     - chromium
+    - gitg
 
 mail:
     - neomutt
