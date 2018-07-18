@@ -20,9 +20,9 @@ The follow roles are done:
 * audio: installs alsa-utils, mpd, mpc, ncmpc, soundcloud-dl and create media/audio subdirectories
 * backup: installs restic, enables scheduled backups and optionally enable backup rsync on a remote host by ssh
 * ops: installs ansible, ansible-lint, libvirt, wireshark, virt-mananger and puppet-lint
+* virt: installs docker, qemu, virtualbox and vagrant
 
 To come:
-* virtinfra
 * dev
 * media
 * communication
@@ -73,3 +73,4 @@ Main available tags are:
 * audio
 * backup
 * ops
+* virt

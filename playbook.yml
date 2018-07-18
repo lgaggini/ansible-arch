@@ -12,3 +12,4 @@
     - { role: audio, tags: ['audio', 'cli', 'gui'] }
     - { role: backup, tags: ['backup', 'cli', 'gui'] }
     - { role: ops, tags: ['ops', 'cli', 'gui'] }
+    - { role: virt, tags: ['virt', 'cli', 'gui'] }

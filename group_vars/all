@@ -198,3 +198,10 @@ ops_gui:
   - virt-manager
 ops_aur:
   - puppet-lint
+
+virt_cli:
+  - docker
+  - qemu-headless
+virt_gui:
+  - virtualbox
+  - vagrant
