@@ -195,7 +195,7 @@ ops_cli:
   - wireshark-cli
   - libvirt
 ops_gui:
-  - wireshark-gtk
+  - wireshark
   - virt-manager
 ops_aur:
   - puppet-lint
