@@ -125,7 +125,6 @@ gui_utility:
 gui_themes:
     - elementary-icon-theme
 gui_aur:
-    - vertex-themes
     - eminent-git
     - lain-git
     - awesome-freedesktop-git
