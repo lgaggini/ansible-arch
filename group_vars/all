@@ -122,6 +122,7 @@ gui_utility:
     - wicd-gtk
     - gnome-keyring
     - seahorse
+    - feh
 gui_themes:
     - elementary-icon-theme
 gui_aur:
