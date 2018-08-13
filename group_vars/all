@@ -60,6 +60,8 @@ core_utils:
     - linux-lts
     - ttf-dejavu
     - ttf-hack
+    - bat
+    - exa
 core_debugutils:
     - strace
     - lsof
