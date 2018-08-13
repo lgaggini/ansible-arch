@@ -162,10 +162,10 @@ mail_account:
 
 pim:
    - vdirsyncer
-   - khal
    - pass
 pim_aur:
-   - todoman
+   - todoman-git
+   - khal-git
 pim_account:
    name: account
    url: caldav_url
