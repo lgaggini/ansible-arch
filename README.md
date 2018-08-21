@@ -17,18 +17,18 @@ The follow roles are done:
 * tools: installs some core gui tools (browser, editor)
 * mail: installs neomutt, msmtp, offlineimap, notmuch, lbdb, urlscan
 * pim: installs pass, vdirsyncer, khal, todoman
-* audio: installs alsa-utils, mpd, mpc, ncmpc, soundcloud-dl and create media/audio subdirectories
+* audio: installs alsa-utils, mpd, mpc, ncmpc, soundcloud-dl and creates media/audio subdirectories
 * backup: installs restic, enables scheduled backups and optionally enable backup rsync on a remote host by ssh
 * ops: installs ansible, ansible-lint, libvirt, wireshark, virt-mananger and puppet-lint
 * virt: installs docker, qemu, virtualbox and vagrant
 * dev:
     * python: installs ipython2/3, python2/3 virtualenv, python virtualenvwrapper, pelican and flake8
 * communication: installs weechat, pidgin and purple-skyweb (skype plugin for pidgin)
+* media: installs mpv, gnome-mpv and creates media/video subdirectories
 
 ## Plan
 To come:
 * to set communications account
-* media role
 
 ## Install
 ### Clone
@@ -79,3 +79,4 @@ Main available tags are:
 * virt
 * dev
 * comm
+* media

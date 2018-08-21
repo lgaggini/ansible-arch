@@ -223,3 +223,14 @@ comm:
     - weechat
     - pidgin
     - purple-skypeweb
+
+media_core:
+    - mpv
+media_gui:
+    - gnome-mpv
+media_skel:
+    - media/video/film
+    - media/video/serietv
+    - media/video/it
+    - media/video/doc
+    - media/video/sport

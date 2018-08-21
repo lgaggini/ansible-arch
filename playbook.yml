@@ -15,3 +15,4 @@
     - { role: virt, tags: ['virt', 'cli', 'gui'] }
     - { role: dev, tags: ['dev', 'python', 'cli', 'gui'] }
     - { role: comm, tags: ['comm', 'cli', 'gui'] }
+    - { role: media, tags: ['media', 'cli', 'gui'] }
