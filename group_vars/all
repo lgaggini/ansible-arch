@@ -218,3 +218,8 @@ dev:
     - python-virtualenvwrapper
     - pelican
     - flake8
+
+comm:
+    - weechat
+    - pidgin
+    - purple-skypeweb

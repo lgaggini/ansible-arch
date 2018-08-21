@@ -23,10 +23,12 @@ The follow roles are done:
 * virt: installs docker, qemu, virtualbox and vagrant
 * dev:
     * python: installs ipython2/3, python2/3 virtualenv, python virtualenvwrapper, pelican and flake8
+* communication: installs weechat, pidgin and purple-skyweb (skype plugin for pidgin)
 
+## Plan
 To come:
-* media
-* communication
+* to set communications account
+* media role
 
 ## Install
 ### Clone
@@ -76,3 +78,4 @@ Main available tags are:
 * ops
 * virt
 * dev
+* comm

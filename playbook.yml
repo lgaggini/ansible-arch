@@ -14,3 +14,4 @@
     - { role: ops, tags: ['ops', 'cli', 'gui'] }
     - { role: virt, tags: ['virt', 'cli', 'gui'] }
     - { role: dev, tags: ['dev', 'python', 'cli', 'gui'] }
+    - { role: comm, tags: ['comm', 'cli', 'gui'] }
