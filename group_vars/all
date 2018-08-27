@@ -82,6 +82,7 @@ core_netutils:
     - mtr
     - sslscan
     - httpie
+    - prettyping
     - tcpdump
     - nethogs
     - newsboat
@@ -91,6 +92,7 @@ core_goodies:
     - cowsay
 core_aur:
     - byobu
+    - diff-so-fancy
 
 gui_core:
     - xorg-server
