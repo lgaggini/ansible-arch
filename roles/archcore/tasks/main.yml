@@ -21,4 +21,5 @@
 - include: user.yml
 - include: locale.yml
 - include: timezone.yml
+- include: home.yml
 - include: packages.yml

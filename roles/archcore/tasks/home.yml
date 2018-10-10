@@ -4,3 +4,5 @@
   become: yes
   become_user: "{{ user.name }}"
   with_items: "{{ home_skel }}"
+  tags:
+    - home
