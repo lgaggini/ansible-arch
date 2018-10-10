@@ -11,7 +11,7 @@ The follow roles are done:
     * timezone, locale and keymapping configuration
     * pacman configuration, mirror refresh, reflector install and mirror sort
     * basic packages install
-* home: populates home with a directories skel
+    * populates home with a directories skel
 * dotfiles: clones a dotfiles repo by git and install them in the home
 * x: installs xorg, video driver, window manager and basic gui utilities
 * tools: installs some core gui tools (browser, editor)
