@@ -6,6 +6,14 @@
     - packages
     - core_utils
 
+- name: Clone yay repo
+  git: repo=https://aur.archlinux.org/yay.git dest=/tmp/yay/ accept_hostkey=yes update=yes
+  become_user: "{{ user.name }}"
+
+- name: Create yay package
+  shell: cd /tmp/yay && makepkg -si --noconfirm
+  become_user: "{{ user.name }}"
+
 - name: Install tmux splitted pages script
   copy: src=tmux_splitted_pager.sh dest=/home/{{ user.name }}/bin/tmux_splitted_pager.sh
   tags:
