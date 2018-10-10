@@ -17,9 +17,9 @@
   become: yes
   become_user: "{{ user.name }}"
 
-- name: Clone vundle for vim
-  git: repo={{ plug.url }} dest=/home/{{ user.name }}/{{ plug.destination }} version=master
-  when: vundle is defined
+- name: Clone plug for vim
+  get_url: url={{ plug.url }} dest=/home/{{ user.name }}/{{ plug.destination }}
+  when: plug is defined
   become: yes
   become_user: "{{ user.name }}"
   tags:
@@ -27,7 +27,7 @@
 
 - name: Install Vim plugins
   command: "vim +PlugInstall +qall"
-  when: vundle is defined
+  when: plug is defined
   become: yes
   become_user: "{{ user.name }}"
   tags:
@@ -35,6 +35,13 @@
 
 - name: create backup directory for vim
   file: path="/home/{{ user.name }}/.vim/backup" state=directory
+  become: yes
+  become_user: "{{ user.name }}"
+  tags:
+    - vim
+
+- name: create swap directory for vim
+  file: path="/home/{{ user.name }}/.vim/swap" state=directory
   become: yes
   become_user: "{{ user.name }}"
   tags:
