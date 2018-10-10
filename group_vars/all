@@ -50,8 +50,6 @@ core_utils:
     - tmux
     - git
     - tig
-    - yaourt
-    - yay
     - sudo
     - ranger
     - vim
@@ -62,6 +60,7 @@ core_utils:
     - ttf-hack
     - bat
     - exa
+    - python-neovim
 core_debugutils:
     - strace
     - lsof
