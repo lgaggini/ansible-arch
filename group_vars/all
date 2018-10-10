@@ -55,6 +55,7 @@ core_utils:
     - vim
     - pkgfile
     - mlocate
+    - make
     - linux-lts
     - ttf-dejavu
     - ttf-hack
