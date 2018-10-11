@@ -22,5 +22,5 @@ remotehost = {{ mail_account.imap_host }}
 ssl = {{ mail_account.imap_ssl }}
 cert_fingerprint = {{ mail_account.imap_cert_fingerprint }}
 remoteport = {{ mail_account.imap_port }}
-remoteusereval = get_user({{ mail_account.name }})
-remotepasseval = get_pass({{ mail_account.name }})
+remoteusereval = get_user("{{ mail_account.name }}")
+remotepasseval = get_pass("{{ mail_account.name }}")
