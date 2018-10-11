@@ -5,6 +5,12 @@
     - cli
     - mail_account
 
+- name: Notmuch configuration
+  template: src=notmuch_config.j2 dest=/home/{{ user.name }}/.notmuch_config owner={{ user.name }} group={{ user.name }} mode=0600
+  tags:
+    - cli
+    - mail_account
+
 - name: Msmtprc configuration
   template: src=msmtprc.j2 dest=/home/{{ user.name }}/.msmtprc owner={{ user.name }} group={{ user.name }} mode=0600
   tags:

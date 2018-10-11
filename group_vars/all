@@ -1,5 +1,6 @@
 user:
     name: lg
+    fullname: Lorenzo Gaggini
     uid: 1001
     group: lg
     shell: /bin/bash
