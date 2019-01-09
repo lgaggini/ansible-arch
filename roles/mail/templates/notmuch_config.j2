@@ -31,6 +31,13 @@ path=/home/{{ user.name }}/mail
 [user]
 name={{ user.fullname }}
 primary_email={{ user.email }}
+{% if user.other_emails is defined %}
+other_email = {% for other_email in user.other_emails %}
+{{ other_email }} 
+{%- if not loop.last %};{% endif %}
+{% endfor %}
+{% endif %}
+
 
 # Configuration for "notmuch new"
 #

@@ -5,6 +5,8 @@ user:
     group: lg
     shell: /bin/bash
     email: lg@lgaggini.net
+    other_emails:
+      - lgaggini@gmail.com
 
 timezone: Europe/Rome
 locale: it_IT.UTF-8
