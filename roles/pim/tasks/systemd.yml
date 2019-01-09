@@ -1,6 +1,6 @@
 ---
 - name: Enable vdirsyncer service timer
-  systemd: daemon_reload=yes user=yes name=vdirsyncer.timer enabled=yes
+  systemd: daemon_reload=yes scope=user name=vdirsyncer.timer enabled=yes
   become: yes
   become_method: machinectl
   become_user: "{{ user.name }}"

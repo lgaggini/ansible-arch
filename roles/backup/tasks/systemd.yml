@@ -1,6 +1,6 @@
 ---
 - name: Enable backup service timer
-  systemd: daemon_reload=yes user=yes name=restic.timer enabled=yes
+  systemd: daemon_reload=yes scope=user name=restic.timer enabled=yes
   become: yes
   become_method: machinectl
   become_user: "{{ user.name }}"
@@ -18,7 +18,7 @@
     - systemd
 
 - name: Enable backup rsync service timer
-  systemd: daemon_reload=yes user=yes name=backup-rsync.timer enabled=yes
+  systemd: daemon_reload=yes scope=user name=backup-rsync.timer enabled=yes
   become: yes
   become_method: machinectl
   become_user: "{{ user.name }}"
