@@ -1,15 +1,13 @@
 ---
 - name: Install audio core packages
-  pacman: name={{ item }} state=present
-  with_items: "{{ audio_core }}"
+  pacman: name={{ audio_core }} state=present
   tags:
     - packages
     - cli
     - audio_core
 
 - name: Install audio players packages
-  pacman: name={{ item }} state=present
-  with_items: "{{ audio_players }}"
+  pacman: name={{ audio_players }} state=present
   tags:
     - packages
     - cli

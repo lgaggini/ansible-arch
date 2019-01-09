@@ -1,7 +1,6 @@
 ---
 - name: Install core utils packages
-  pacman: name={{ item }} state=present
-  with_items: "{{ core_utils }}"
+  pacman: name={{ core_utils }} state=present
   tags:
     - packages
     - core_utils
@@ -21,22 +20,19 @@
     - core_utils
 
 - name: Install core debug utils packages
-  pacman: name={{ item }} state=present
-  with_items: "{{ core_debugutils }}"
+  pacman: name={{ core_debugutils }} state=present
   tags:
     - packages
     - core_debugutils
 
 - name: Install core net utils packages
-  pacman: name={{ item }} state=present
-  with_items: "{{ core_netutils }}"
+  pacman: name={{ core_netutils }} state=present
   tags:
     - packages
     - core_netutils
 
 - name: Install core goodies packages
-  pacman: name={{ item }} state=present
-  with_items: "{{ core_goodies }}"
+  pacman: name={{ core_goodies }} state=present
   tags:
     - packages
     - core_goodies

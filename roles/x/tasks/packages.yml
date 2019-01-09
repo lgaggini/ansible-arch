@@ -1,23 +1,20 @@
 ---
 - name: Install gui core packages
-  pacman: name={{ item }} state=present
-  with_items: "{{ gui_core }}"
+  pacman: name={{ gui_core }} state=present
   tags:
     - packages
     - gui
     - gui_core
 
 - name: Install gui video drivers
-  pacman: name={{ item }} state=present
-  with_items: "{{ gui_video_drivers }}"
+  pacman: name={{ gui_video_drivers }} state=present
   tags:
     - packages
     - gui
     - gui_video_drivers
 
 - name: Install gui de/wm packages
-  pacman: name={{ item }} state=present
-  with_items: "{{ gui_ui }}"
+  pacman: name={{ gui_ui }} state=present
   tags:
     - packages
     - gui
@@ -31,8 +28,7 @@
     - gui_utility
 
 - name: Install gui utility packages
-  pacman: name={{ item }} state=present
-  with_items: "{{ gui_utility }}"
+  pacman: name={{ gui_utility }} state=present
   tags:
     - packages
     - gui
@@ -46,8 +42,7 @@
     - gui_utility
 
 - name: Install gui themes packages
-  pacman: name={{ item }} state=present
-  with_items: "{{ gui_themes }}"
+  pacman: name={{ gui_themes }} state=present
   tags:
     - packages
     - gui

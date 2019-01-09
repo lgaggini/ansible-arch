@@ -1,15 +1,13 @@
 ---
 - name: Install virt cli packages
-  pacman: name={{ item }} state=present
-  with_items: "{{ virt_cli }}"
+  pacman: name={{ virt_cli }} state=present
   tags:
     - packages
     - virt
     - cli
 
 - name: Install virt gui packages
-  pacman: name={{ item }} state=present
-  with_items: "{{ virt_gui }}"
+  pacman: name={{ virt_gui }} state=present
   tags:
     - packages
     - virt

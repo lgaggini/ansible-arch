@@ -1,15 +1,13 @@
 ---
 - name: Install media core packages
-  pacman: name={{ item }} state=present
-  with_items: "{{ media_core }}"
+  pacman: name={{ media_core }} state=present
   tags:
     - packages
     - cli
     - media_core
 
 - name: Install media gui packages
-  pacman: name={{ item }} state=present
-  with_items: "{{ media_core }}"
+  pacman: name={{ media_gui }} state=present
   tags:
     - packages
     - gui
