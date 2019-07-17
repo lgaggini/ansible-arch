@@ -90,6 +90,7 @@ core_netutils:
     - tcpdump
     - nethogs
     - newsboat
+    - sshpass
 core_goodies:
     - neofetch
     - fortune-mod
