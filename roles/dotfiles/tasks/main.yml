@@ -17,6 +17,11 @@
   become: yes
   become_user: "{{ user.name }}"
 
+- name: Create autoload directory
+  file: path=/home/{{ user.name }}/.vim/autoload state=directory
+  become: yes
+  become_user: "{{ user.name }}"
+
 - name: Clone plug for vim
   get_url: url={{ plug.url }} dest=/home/{{ user.name }}/{{ plug.destination }}
   when: plug is defined
