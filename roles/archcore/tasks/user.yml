@@ -11,9 +11,15 @@
 
 - name: Configure authorized keys
   authorized_key: user={{ user.name }} key="{{ lookup('file', 'id_rsa.pub') }}"
+  ignore_errors: True
   tags:
     - user
 
+- name: Install sudo package
+  pacman: name=sudo state=present
+  tags:
+    - user
+    
 - name: Copy sudo configuration
   copy: src=sudoers dest=/etc/sudoers mode=0440 validate='visudo -cf %s'
   tags:
