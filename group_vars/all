@@ -91,7 +91,7 @@ core_netutils:
     - nethogs
     - newsboat
 core_goodies:
-    - archey3
+    - neofetch
     - fortune-mod
     - cowsay
 core_aur:
