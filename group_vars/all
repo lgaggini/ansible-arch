@@ -152,8 +152,8 @@ mail:
     - msmtp
     - notmuch-runtime
     - gpgme
-mail_aur:
     - urlscan
+mail_aur:
     - lbdb
 mail_account:
     name: account
