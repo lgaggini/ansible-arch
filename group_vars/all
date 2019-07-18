@@ -221,6 +221,7 @@ virt_gui:
 
 dev:
   python:
+    - subversion
     - ipython2
     - ipython
     - python2-virtualenv
