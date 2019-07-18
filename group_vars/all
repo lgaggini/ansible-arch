@@ -179,6 +179,7 @@ pim:
 pim_aur:
    - todoman-git
    - khal-git
+   - davmail
 pim_account:
    name: account
    url: caldav_url

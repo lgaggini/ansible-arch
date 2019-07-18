@@ -8,3 +8,13 @@
     - cli
     - pim
     - systemd
+
+- name: Enable davmail service
+  systemd: daemon_reload=yes scope=user name=davmail@lg enabled=yes
+  become: yes
+  become_method: machinectl
+  become_user: "{{ user.name }}"
+  tags:
+    - cli
+    - pim
+    - systemd
