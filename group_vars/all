@@ -138,6 +138,7 @@ gui_aur:
     - awesome-freedesktop-git
     - urxvt-resize-font-git
     - ttf-nerd-fonts-hack-complete-git
+    - i3lock-fancy-git
 
 tools:
     - file-roller
