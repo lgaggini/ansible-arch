@@ -1,7 +1,6 @@
 ---
 - name: Install python dev packages
-  pacman: name={{ item }} state=present
-  with_items: "{{ dev.python }}"
+  pacman: name={{ dev.python }} state=present
   tags:
     - packages
     - python
