@@ -6,6 +6,12 @@
     - gui
     - gui_core
 
+- name: Install xorg keyboard settings
+  copy: src=10-keyboard.conf dest=/etc/X11/xorg.conf.d/10-keyboard.conf owner=root group=root mode=0644
+  tags:
+    - gui
+    - gui_core
+
 - name: Install gui video drivers
   pacman: name={{ gui_video_drivers }} state=present
   tags:
@@ -29,13 +35,6 @@
 
 - name: Install gui utility packages
   pacman: name={{ gui_utility }} state=present
-  tags:
-    - packages
-    - gui
-    - gui_utility
-
-- name: Install slock wrapper
-  copy: src=slock dest=/usr/bin/slock
   tags:
     - packages
     - gui
