@@ -165,7 +165,6 @@ mail_account:
     name: account
     imap_host: imap.account
     imap_ssl: yes
-    imap_cert_fingerprint: ssl_fingerprint
     imap_port: 993
     smtp_host: smtp.account
     smtp_auth: "on"
