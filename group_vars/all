@@ -209,14 +209,12 @@ ops_cli:
   - wireshark-cli
   - libvirt
 ops_gui:
-  - wireshark
-  - virt-manager
+  - wireshark-qt
 ops_aur:
   - puppet-lint
 
 virt_cli:
   - docker
-  - qemu-headless
 virt_gui:
   - virtualbox
   - vagrant
