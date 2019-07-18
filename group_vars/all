@@ -137,6 +137,7 @@ gui_aur:
     - lain-git
     - awesome-freedesktop-git
     - urxvt-resize-font-git
+    - ttf-nerd-fonts-hack-complete-git
 
 tools:
     - file-roller
