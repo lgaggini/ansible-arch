@@ -130,6 +130,7 @@ gui_utility:
     - gnome-keyring
     - seahorse
     - feh
+    - numlockx
 gui_themes:
     - elementary-icon-theme
     - gnome-themes-extra
