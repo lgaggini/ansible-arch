@@ -147,7 +147,7 @@ tools:
     - lxtask
     - gvim
     - python-neovim
-    - firefox
+    - firefox-i18n-it
     - gitg
 
 mail:
