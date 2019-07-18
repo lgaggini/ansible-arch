@@ -132,6 +132,7 @@ gui_utility:
     - feh
 gui_themes:
     - elementary-icon-theme
+    - gnome-themes-extra
 gui_aur:
     - eminent-git
     - lain-git
