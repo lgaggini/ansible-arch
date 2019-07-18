@@ -104,7 +104,7 @@ gui_core:
     - xorg-xinit
     - xorg-xmodmap
     - xorg-xev
-    - xorg-xbacklight
+    - acpilight
     - xorg-xrandr
     - xcape
 gui_video_drivers:
