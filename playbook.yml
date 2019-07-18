@@ -6,8 +6,8 @@
     - { role: dotfiles, tags: ['dotfiles', 'cli', 'gui'] }
     - { role: x, tags: ['x', 'gui'] }
     - { role: tools, tags: ['tools', 'gui'] }
-    - { role: mail, tags: ['mail', 'cli', 'gui'] }
     - { role: pim, tags: ['pim', 'cli', 'gui'] }
+    - { role: mail, tags: ['mail', 'cli', 'gui'] }
     - { role: audio, tags: ['audio', 'cli', 'gui'] }
     - { role: backup, tags: ['backup', 'cli', 'gui'] }
     - { role: ops, tags: ['ops', 'cli', 'gui'] }
