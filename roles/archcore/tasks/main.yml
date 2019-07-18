@@ -23,3 +23,4 @@
 - include: timezone.yml
 - include: home.yml
 - include: packages.yml
+- include: systemd.yml
