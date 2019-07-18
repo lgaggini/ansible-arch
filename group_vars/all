@@ -51,6 +51,7 @@ core_utils:
     - parallel
     - pwgen
     - tmux
+    - tmuxp
     - git
     - tig
     - sudo
