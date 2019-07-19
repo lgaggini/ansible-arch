@@ -108,6 +108,7 @@ gui_core:
     - acpilight
     - xorg-xrandr
     - xcape
+    - xorg-xprop
 gui_video_drivers:
     - xf86-video-vesa
 gui_ui:
