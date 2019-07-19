@@ -67,6 +67,7 @@ core_utils:
     - exa
     - python-neovim
     - pbzip2
+    - ctags
 core_debugutils:
     - strace
     - lsof
