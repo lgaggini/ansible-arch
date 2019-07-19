@@ -24,3 +24,6 @@
 - include: home.yml
 - include: packages.yml
 - include: systemd.yml
+
+- name: Copy nobeep configuration
+  copy: src=nobeep.conf dest=/etc/modprobe.d/nobeep.conf mode=0440
