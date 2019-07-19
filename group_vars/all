@@ -151,6 +151,7 @@ tools:
     - python-neovim
     - firefox-i18n-it
     - gitg
+    - leafpad
 
 mail:
     - neomutt
