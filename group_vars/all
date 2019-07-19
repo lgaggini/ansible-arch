@@ -225,6 +225,8 @@ dev:
     - subversion
     - ipython2
     - ipython
+    - python-pip
+    - python2-pip
     - python2-virtualenv
     - python-virtualenv
     - python-virtualenvwrapper
