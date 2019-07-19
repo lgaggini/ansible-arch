@@ -193,6 +193,7 @@ audio_players:
 audio_aur:
   - soundcloud-dl-git
 audio_skel:
+  - .mpd
   - media/music/trance/livesets
 
 backup:
