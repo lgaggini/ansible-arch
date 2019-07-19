@@ -209,7 +209,6 @@ ops_cli:
   - ansible
   - ansible-lint
   - wireshark-cli
-  - libvirt
 ops_gui:
   - wireshark-qt
 ops_aur:
