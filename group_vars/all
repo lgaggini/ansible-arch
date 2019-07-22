@@ -134,6 +134,7 @@ gui_utility:
     - seahorse
     - feh
     - numlockx
+    - autorandr
 gui_themes:
     - elementary-icon-theme
     - gnome-themes-extra
