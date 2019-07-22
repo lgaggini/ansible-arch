@@ -151,6 +151,7 @@ tools:
     - zathura
     - lxtask
     - gvim
+    - vim-spell-it
     - python-neovim
     - firefox-i18n-it
     - gitg
