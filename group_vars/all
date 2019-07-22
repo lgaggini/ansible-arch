@@ -192,7 +192,7 @@ audio_core:
 audio_players:
   - mpd
   - mpc
-  - ncmpc
+  - ncmpcpp
 audio_aur:
   - soundcloud-dl-git
 audio_skel:
