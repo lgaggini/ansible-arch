@@ -93,6 +93,7 @@ core_netutils:
     - nethogs
     - newsboat
     - sshpass
+    - dnsutils
 core_goodies:
     - neofetch
     - fortune-mod
