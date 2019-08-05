@@ -150,6 +150,7 @@ gui_aur:
 tools:
     - file-roller
     - zathura
+    - zathura-pdf-mupdf
     - lxtask
     - gvim
     - vim-spell-it
