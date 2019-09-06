@@ -124,7 +124,6 @@ gui_utility:
     - lxappearance
     - xfce4-power-manager
     - xfce4-screenshooter
-    - parcellite
     - i3lock
     - redshift
     - arandr
@@ -146,6 +145,7 @@ gui_aur:
     - urxvt-resize-font-git
     - ttf-nerd-fonts-hack-complete-git
     - i3lock-fancy-git
+    - rofi-greenclip
 
 tools:
     - file-roller
