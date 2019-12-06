@@ -75,6 +75,7 @@ core_debugutils:
     - glances
     - sysstat
     - ncdu
+    - hyperfine
 core_netutils:
     - net-tools
     - wicd
