@@ -193,6 +193,9 @@ pim_account:
 
 audio_core:
   - alsa-utils
+  - pulseaudio
+  - pulseaudio-alsa
+  - pavucontrol
 audio_players:
   - mpd
   - mpc
