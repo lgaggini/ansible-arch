@@ -1,6 +1,6 @@
 # ansible-arch
 
-ansible-arch is an Ansible playbook heavily inspired by [spark](https://github.com/pigmonkey/spark) to provision and recreate from scratch my archlinunx workstation environment.
+ansible-arch is an Ansible playbook heavily inspired by [spark](https://github.com/pigmonkey/spark) to provision and recreate from scratch my archlinux workstation environment.
 
 ## Status
 The follow roles are done:
