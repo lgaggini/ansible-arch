@@ -68,6 +68,7 @@ core_utils:
     - python-neovim
     - pbzip2
     - ctags
+    - shellcheck
 core_debugutils:
     - strace
     - lsof
