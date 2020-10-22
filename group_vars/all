@@ -103,6 +103,7 @@ core_goodies:
 core_aur:
     - byobu
     - diff-so-fancy
+    - git-delta-bin
 
 gui_core:
     - xorg-server
