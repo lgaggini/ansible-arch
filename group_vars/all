@@ -96,6 +96,7 @@ core_netutils:
     - newsboat
     - sshpass
     - dnsutils
+    - gping
 core_goodies:
     - neofetch
     - fortune-mod
