@@ -79,7 +79,6 @@ core_debugutils:
     - hyperfine
 core_netutils:
     - net-tools
-    - wicd
     - curl
     - wget
     - surfraw
@@ -97,6 +96,9 @@ core_netutils:
     - sshpass
     - dnsutils
     - gping
+    - netctl
+    - wpa_supplicant
+    - wireless_tools
 core_goodies:
     - neofetch
     - fortune-mod
@@ -133,7 +135,6 @@ gui_utility:
     - arandr
     - unclutter
     - xautolock
-    - wicd-gtk
     - gnome-keyring
     - seahorse
     - feh
