@@ -163,6 +163,7 @@ tools:
     - firefox-i18n-it
     - gitg
     - leafpad
+    - workrave
 
 mail:
     - neomutt
