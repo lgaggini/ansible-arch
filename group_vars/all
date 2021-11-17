@@ -99,6 +99,7 @@ core_netutils:
     - netctl
     - wpa_supplicant
     - wireless_tools
+    - ipcalc
 core_goodies:
     - neofetch
     - fortune-mod
