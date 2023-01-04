@@ -14,7 +14,7 @@ The follow roles are done:
     * populates home with a directories skel
 * dotfiles: clones a dotfiles repo by git and install them in the home
 * x: installs xorg, video driver, window manager and basic gui utilities
-* tools: installs some core gui tools (browser, editor)
+* tools: installs some core gui tools (browser, editor, file manager)
 * mail: installs neomutt, msmtp, offlineimap, notmuch, lbdb, urlscan
 * pim: installs pass, vdirsyncer, khal, todoman
 * audio: installs alsa-utils, mpd, mpc, ncmpc, soundcloud-dl and creates media/audio subdirectories
