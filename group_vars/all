@@ -6,7 +6,7 @@ user:
     shell: /bin/bash
     email: lg@lgaggini.net
     other_emails:
-      - lgaggini@gmail.com
+        - lgaggini@gmail.com
 
 timezone: Europe/Rome
 locale: it_IT.UTF-8
@@ -188,67 +188,67 @@ mail_account:
     smtp_port: 587
 
 pim:
-   - vdirsyncer
-   - pass
+    - vdirsyncer
+    - pass
 pim_aur:
-   - todoman-git
-   - khal-git
-   - davmail
+    - todoman-git
+    - khal-git
+    - davmail
 pim_account:
-   name: account
-   url: caldav_url
+    name: account
+    url: caldav_url
 
 audio_core:
-  - alsa-utils
-  - pulseaudio
-  - pulseaudio-alsa
-  - pavucontrol
+    - alsa-utils
+    - pulseaudio
+    - pulseaudio-alsa
+    - pavucontrol
 audio_players:
-  - mpd
-  - mpc
-  - ncmpcpp
+    - mpd
+    - mpc
+    - ncmpcpp
 audio_aur:
-  - soundcloud-dl-git
+    - soundcloud-dl-git
 audio_skel:
-  - .mpd
-  - media/music/trance/livesets
+    - .mpd
+    - media/music/trance/livesets
 
 backup:
-  - restic
-  - rsync
+    - restic
+    - rsync
 backup_remote:
-  enable: true
-  user: lgaggini
-  key: "%h/.ssh/backup_key"
-  destination: backup.server/mybackup
+    enable: true
+    user: lgaggini
+    key: "%h/.ssh/backup_key"
+    destination: backup.server/mybackup
 
 ops_cli:
-  - ansible
-  - ansible-lint
-  - wireshark-cli
+    - ansible
+    - ansible-lint
+    - wireshark-cli
 ops_gui:
-  - wireshark-qt
+    - wireshark-qt
 ops_aur:
-  - puppet-lint
+    - puppet-lint
 
 virt_cli:
-  - docker
+    - docker
 virt_gui:
-  - virtualbox
-  - vagrant
+    - virtualbox
+    - vagrant
 
 dev:
-  python:
-    - subversion
-    - ipython2
-    - ipython
-    - python-pip
-    - python2-pip
-    - python2-virtualenv
-    - python-virtualenv
-    - python-virtualenvwrapper
-    - pelican
-    - flake8
+    python:
+        - subversion
+        - ipython2
+        - ipython
+        - python-pip
+        - python2-pip
+        - python2-virtualenv
+        - python-virtualenv
+        - python-virtualenvwrapper
+        - pelican
+        - flake8
 
 comm:
     - weechat
