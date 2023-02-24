@@ -22,5 +22,14 @@ remotehost = {{ mail_account.imap_host }}
 ssl = {{ mail_account.imap_ssl }}
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 remoteport = {{ mail_account.imap_port }}
+auth_mechanisms = {{ mail_account.imap_auth }}
+
+{% if mail_account.imap_auth == 'XOAUTH2' %}
+oauth2_request_url = {{ imap_oauth2_request_url }}
+oauth2_client_id = {{ imap_oauth2_client_id }}
+oauth2_client_secret =  {{ imap_oauth2_client_secret }}
+oauth2_refresh_token =  {{ imap_oauth2_refresh_token }}
+{% else %}
 remoteusereval = get_user("{{ mail_account.name }}")
 remotepasseval = get_pass("{{ mail_account.name }}")
+{% endif %}

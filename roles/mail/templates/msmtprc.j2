@@ -1,13 +1,14 @@
 defaults
 logfile ~/logs/msmtp.log
 tls_trust_file /etc/ssl/certs/ca-certificates.crt
-auth {{ mail_account.smtp_auth }}
-tls {{ mail_account.smtp_tls }}
-port {{ mail_account.smtp_port }}
 
 account {{ mail_account.name }}
 host {{ mail_account.smtp_host }}
+port {{ mail_account.smtp_port }}
+tls {{ mail_account.smtp_tls }}
+tls_startls {{ mail_account.smtp_starttls }}
+auth {{ mail_account.smtp_auth }}
 user {{ mail_account.smtp_username }}
-passwordeval "pass mail/{{ mail_account.name }}"
+passwordeval {{ mail_account.passwordeval }}"
 
 account default: {{ mail_account.name }}

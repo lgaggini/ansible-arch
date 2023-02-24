@@ -1,3 +1,4 @@
+---
 user:
     name: lg
     fullname: Lorenzo Gaggini
@@ -184,13 +185,23 @@ mail_aur:
 mail_account:
     name: account
     imap_host: imap.account
-    imap_ssl: yes
+    imap_ssl: "yes"
     imap_port: 993
+    imap_auth: "PLAIN"
+    # imap_auth: "XOAUTH2"
+    imap_oauth2_request_url: "request_url"
+    imap_oauth2_client_id: "client_id"
+    imap_oauth2_client_secret: "client_secret"
+    imap_oauth2_refresh_token: "refresh_token"
     smtp_host: smtp.account
-    smtp_auth: "on"
-    smtp_username: lg
-    smtp_tls: "on"
     smtp_port: 587
+    smtp_tls: "on"
+    smtp_starttls: "on"
+    smtp_auth: "on"
+    # smtp_auth: "xoauth2"
+    smtp_username: lg
+    smtp_passwordeval: "pass mail/account"
+    # smtp_passwordeval: "cd /home/lg/code/lgaggini/M365-IMAP/; /home/lg/.virtualenvs/m365-imap/bin/python3 refresh_token.py"
 
 pim:
     - vdirsyncer
