@@ -126,7 +126,7 @@ gui_ui:
     - rxvt-unicode
     - rxvt-unicode-terminfo
 gui_utility:
-    - volumeicon
+    - pasystray
     - qt5ct
     - lxappearance
     - xfce4-power-manager
@@ -203,10 +203,13 @@ audio_core:
     - pulseaudio
     - pulseaudio-alsa
     - pavucontrol
+    - bluez
+    - bluez-utils
 audio_players:
     - mpd
     - mpc
     - ncmpcpp
+    - blueman
 audio_aur:
     - soundcloud-dl-git
 audio_skel:
