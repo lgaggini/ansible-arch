@@ -100,6 +100,7 @@ core_netutils:
     - wpa_supplicant
     - wireless_tools
     - ipcalc
+    - openfortivpn
 core_goodies:
     - neofetch
     - fortune-mod
@@ -256,7 +257,6 @@ dev:
 comm:
     - weechat
     - pidgin
-    - purple-skypeweb
 
 media_core:
     - mpv
