@@ -147,8 +147,8 @@ gui_utility:
     - rofi-pass
     - rofi-calc
 gui_themes:
-    - elementary-icon-theme
     - gnome-themes-extra
+    - breeze-icons
 gui_aur:
     - eminent-git
     - lain-git
@@ -157,6 +157,7 @@ gui_aur:
     - ttf-nerd-fonts-hack-complete-git
     - i3lock-fancy-git
     - rofi-greenclip
+    - flat-remix-gtk
 
 tools:
     - file-roller
