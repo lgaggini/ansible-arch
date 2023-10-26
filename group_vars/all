@@ -143,6 +143,9 @@ gui_utility:
     - feh
     - numlockx
     - autorandr
+    - rofi
+    - rofi-pass
+    - rofi-calc
 gui_themes:
     - elementary-icon-theme
     - gnome-themes-extra
