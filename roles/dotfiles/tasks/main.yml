@@ -6,7 +6,7 @@
   become_user: "{{ user.name }}"
 
 - name: Install user dotfiles
-  synchronize: src=/home/{{ user.name}}/{{ dotfiles.destination}}/ dest=/home/{{ user.name }}/ archive=yes rsync_opts=--exclude=.git,--exclude=_config.yml,--exclude=LICENSE,--exclude=README.md
+  synchronize: src=/home/{{ user.name}}/{{ dotfiles.destination}}/ dest=/home/{{ user.name }}/ archive=yes rsync_opts=--exclude=.git,--exclude=_config.yml,--exclude=LICENSE,--exclude=README.md,--exclude=*.png
   when: dotfiles is defined
   delegate_to: "{{ inventory_hostname }}"
   become: yes
