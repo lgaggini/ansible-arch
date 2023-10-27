@@ -31,7 +31,7 @@
     - vim
 
 - name: Install Vim plugins
-  command: "vim +PlugInstall +qall"
+  command: "vim --clean '+source ~/.vimrc' +PluginInstall +qall"
   when: plug is defined
   become: yes
   become_user: "{{ user.name }}"
