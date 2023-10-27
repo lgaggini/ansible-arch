@@ -64,6 +64,7 @@ core_utils:
     - linux-lts
     - ttf-dejavu
     - ttf-hack
+    - ttf-hack-nerd
     - bat
     - exa
     - python-neovim
@@ -154,7 +155,6 @@ gui_aur:
     - lain-git
     - awesome-freedesktop-git
     - urxvt-resize-font-git
-    - ttf-nerd-fonts-hack-complete-git
     - i3lock-fancy-git
     - rofi-greenclip
     - flat-remix-gtk
