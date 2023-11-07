@@ -67,7 +67,6 @@ core_utils:
     - ttf-hack-nerd
     - bat
     - exa
-    - python-neovim
     - pbzip2
     - ctags
     - shellcheck
