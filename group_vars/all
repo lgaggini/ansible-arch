@@ -266,8 +266,11 @@ dev:
         - python2-virtualenv
         - python-virtualenv
         - python-virtualenvwrapper
+        - pyenv
         - pelican
         - flake8
+    python_aur:
+        - pyevn-virtualenwrapper
 
 comm:
     - weechat
