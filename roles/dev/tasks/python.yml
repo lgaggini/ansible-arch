@@ -5,3 +5,14 @@
     - packages
     - python
     - cli
+- name: Install python aur packages
+  shell: yay --noconfirm -S {{ item }}
+  with_items: "{{ dev.python_aur }}"
+  become: yes
+  become_user: "{{ user.name }}"
+  when: dev.python_aur is defined
+  tags:
+    - packages
+    - python
+    - cli
+    - aur
