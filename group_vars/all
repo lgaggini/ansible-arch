@@ -45,7 +45,6 @@ core_utils:
     - base-devel
     - less
     - bc
-    - colordiff
     - fzf
     - ripgrep
     - jq
@@ -67,21 +66,28 @@ core_utils:
     - ttf-hack
     - ttf-hack-nerd
     - bat
-    - exa
+    - lsd
     - pbzip2
     - ctags
     - shellcheck
+    - git-delta
+    - fd
+    - procs
+    - duf
+    - zoxide
+    - byobu
 core_debugutils:
     - strace
     - lsof
     - htop
-    - glances
-    - sysstat
+    - btop
     - ncdu
+    - sysstat
     - hyperfine
 core_netutils:
     - net-tools
     - curl
+    - curlie
     - wget
     - surfraw
     - w3m
@@ -108,9 +114,6 @@ core_goodies:
     - fortune-mod
     - cowsay
 core_aur:
-    - byobu
-    - diff-so-fancy
-    - git-delta-bin
     - ranger_devicons-git
 
 gui_core:
@@ -169,7 +172,6 @@ tools:
     - vim-spell-it
     - firefox-i18n-it
     - gitg
-    - leafpad
     - workrave
     - thunar
 
