@@ -71,6 +71,7 @@ core_utils:
     - ctags
     - shellcheck
     - git-delta
+    - colordiff
     - fd
     - procs
     - duf
