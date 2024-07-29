@@ -165,7 +165,7 @@ gui_aur:
     - flat-remix-gtk
 
 tools:
-    - file-roller
+    - engrampa
     - zathura
     - zathura-pdf-mupdf
     - lxtask
