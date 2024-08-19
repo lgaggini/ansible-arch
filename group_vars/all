@@ -58,6 +58,7 @@ core_utils:
     - sudo
     - ranger
     - vim
+    - neovim
     - pkgfile
     - mlocate
     - make
@@ -85,6 +86,7 @@ core_debugutils:
     - ncdu
     - sysstat
     - hyperfine
+    - bash-language-server
 core_netutils:
     - net-tools
     - curl
@@ -152,6 +154,7 @@ gui_utility:
     - rofi
     - rofi-pass
     - rofi-calc
+    - neovide
 gui_themes:
     - gnome-themes-extra
     - breeze-icons
@@ -272,6 +275,7 @@ dev:
         - pyenv
         - pelican
         - flake8
+        - python-lsp-server
     python_aur:
         - pyevn-virtualenwrapper
 
