@@ -251,10 +251,16 @@ ops_cli:
     - ansible
     - ansible-lint
     - wireshark-cli
+    - kubectl
+    - kubectx
+    - kubens
 ops_gui:
     - wireshark-qt
 ops_aur:
     - puppet-lint
+    - kube-ps1
+    - kubecolor
+    - kubeswitch
 
 virt_cli:
     - docker
